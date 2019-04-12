@@ -1,0 +1,4 @@
+<h1>Valuefy Assignment</h1>
+<app-video-player *ngIf="responseCollected" [videoSrc]="apiResponse" [selectedVideo]="selectedVideo"></app-video-player>
+<p>{{name | upperCaseVideoName}}</p>
+<app-video-play-list *ngIf="responseCollected" (videoSelected)="videoChosen($event)" [apiResponse]="apiResponse"></app-video-play-list>
